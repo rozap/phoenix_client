@@ -16,7 +16,7 @@ defmodule PhoenixClient.Transports.Websocket do
     send(socket, :close)
   end
 
-  def init(opts) do
+  def init(opts, _) do
     {:once,
      %{
        opts: opts,
